@@ -6,7 +6,7 @@
 
 The TCP/IP model organizes networking into five layers: Physical, Data Link, Network, Transport, and Application. This model helps explain how data moves from one device to another across networks.
 
-![TCP/IP Model](./images/tcp_ip_model.png)
+![TCP/IP Five-Layer Network Model](./images/TCP_IP_Five_Layer_Model.png)
 
 ---
 
@@ -14,7 +14,7 @@ The TCP/IP model organizes networking into five layers: Physical, Data Link, Net
 
 The OSI model is a seven-layer conceptual framework used to understand and design networks. The layers are: Physical, Data Link, Network, Transport, Session, Presentation, and Application.
 
-![OSI Model](./images/osi_model.png)
+![OSI vs TCP/IP Model Comparison](./images/OSI_vs_TCPIP_Comparison.png)
 
 ---
 
@@ -28,6 +28,8 @@ Networking enables devices to communicate, share resources, and access the inter
 
 Different types of cables connect devices in a network, including twisted pair, coaxial, and fiber optic cables. Each has unique properties for speed and interference protection.
 
+![Twisted Pair Cable Types](./images/Twisted_Pair_Cable_Types.png)
+
 ---
 
 ## Hubs and Switches
@@ -40,11 +42,15 @@ Hubs broadcast data to all connected devices, while switches intelligently forwa
 
 Routers connect multiple networks together and direct data packets based on IP addresses, enabling devices on different networks to communicate.
 
+![Router vs Switch vs Hub](./images/Router_Switch_Hub_Comparison.png)
+
 ---
 
 ## Servers and Clients
 
 Servers provide services or data, and clients request and use these services. This client-server model is fundamental to networking.
+
+![Client-Server Architecture](./images/Client_Server_Network_Diagram.png)
 
 ---
 
@@ -57,6 +63,8 @@ Data is transmitted as bits (0s and 1s) over cables using electrical signals, li
 ## Twisted Pair Cabling and Duplexing
 
 Twisted pair cables contain pairs of wires twisted to reduce interference. Duplexing allows communication to occur in both directions on the cable—either one at a time (half-duplex) or simultaneously (full-duplex).
+
+![Full Duplex vs Half Duplex Communication](./images/Full_Duplex_vs_Half_Duplex.png)
 
 ---
 
@@ -92,6 +100,8 @@ Straight-through cables connect devices like computers to switches or routers. T
 
 Crossover cables connect similar devices directly, like switch-to-switch or computer-to-computer, by swapping transmit and receive wires.
 
+![Straight-through vs Crossover Cable Wiring](./images/Straight_Through_vs_Crossover_Cable.png)
+
 ---
 
 ## Network Ports and Patch Panels
@@ -110,6 +120,8 @@ Ports are physical connectors on devices. Patch panels organize multiple ports a
 - **Cable Tester:** Tests cable integrity and performance.
 - **Loopback Plug:** Tests ports by looping signals back.
 - **Network Tap:** Copies network traffic for monitoring.
+
+![Networking Tools](./images/Networking_Tools_Kit.png)
 
 ---
 
@@ -131,6 +143,8 @@ MAC addresses uniquely identify network devices at the Data Link layer. Ethernet
 
 An Ethernet frame contains destination and source MAC addresses, data payload, and error-checking information to ensure data integrity.
 
+![Ethernet Frame Structure](./images/Ethernet_Frame_Structure.png)
+
 ---
 
 ## Glossary Terms from Module 1
@@ -148,20 +162,4 @@ Some key terms:
 
 ---
 
-*Images used in this document:*
-
-![Crimper Tool](./images/crimper.png)
-
-![Cable Stripper](./images/cable_stripper.png)
-
-![WiFi Analyzer](./images/wifi_analyzer.png)
-
-![Toner Probe](./images/toner_probe.png)
-
-![Punch Down Tool](./images/punch_down_tool.png)
-
-![Cable Tester](./images/cable_tester.png)
-
-![Loopback Plug](./images/loopback_plug.png)
-
-![Network Tap](./images/network_tap.png)
+![Collision Domain vs Broadcast Domain](./images/Collision_vs_Broadcast_Domain.png)
