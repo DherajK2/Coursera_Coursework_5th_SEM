@@ -1,150 +1,126 @@
-# Module 1 Learnings
+# Module 1 Learnings: The Bits and Bytes of Computer Networking
+
+## The TCP/IP Five-Layer Network Model
+
+The TCP/IP model has five layers that describe how data travels across networks: Physical, Data Link, Network, Transport, and Application.
+
+![TCP/IP Model](images/tcp_ip_model.png)
+
+## Supplementary Reading for The OSI Networking Model
+
+The OSI model defines seven layers: Physical, Data Link, Network, Transport, Session, Presentation, and Application. It helps standardize networking functions.
+
+![OSI Model](images/osi_model.png)
+
+## Alex: Why Networking is Important
+
+Networking enables devices to communicate, share resources, and access the internet, which is essential for modern business and daily life.
+
+![Networking Importance](images/networking_importance.png)
+
+## Cables
+
+Cables physically connect devices. Common types include twisted pair, coaxial, and fiber optic.
+
+## Hubs and Switches
+
+- **Hubs** broadcast data to all devices on a network.
+- **Switches** intelligently forward data to the intended device.
+
+![Network Devices](images/network_devices.png)
+
+## Routers
+
+Routers connect different networks and direct data packets between them.
+
+## Servers and Clients
+
+Servers provide data or services, while clients request and use those services.
+
+## Moving Bits Across the Wire
+
+Data travels as electrical or light signals over cables.
+
+![Data Transmission](images/data_transmission.png)
+
+## Twisted Pair Cabling and Duplexing
+
+Twisted pair cables contain pairs of wires twisted to reduce interference. They support half and full duplex communication.
+
+![Twisted Pair Cabling](images/twisted_pair_cable.png)
+
+## Supplemental Reading for Ethernet Over Twisted Pair Technologies
+
+Ethernet over twisted pair is the most common cabling for LANs and internet connections in homes and businesses.
+
+![Ethernet Twisted Pair](images/ethernet_twisted_pair.png)
+
+## UTP, STP, and FTP Ethernet Cables
+
+- **UTP (Unshielded Twisted Pair):** Basic protection, widely used.
+- **STP (Shielded Twisted Pair):** Extra shielding for noisy environments.
+- **FTP (Foiled Twisted Pair):** Foil shielding for interference reduction.
+
+![Cable Types](images/cable_types.png)
+
+## Straight-through and Crossover Cables
+
+- **Straight-through cables** connect different devices (e.g., PC to switch).
+- **Crossover cables** connect similar devices (e.g., PC to PC).
+
+![Straight-Through vs Crossover](images/straight_crossover_cables.png)
+
+## Network Ports and Patch Panels
+
+Patch panels organize and manage multiple network ports in one location.
+
+![Patch Panel](images/patch_panel.png)
+
+## Cabling Tools
+
+Common cabling tools include:
+
+- Crimper: crimps connectors onto cables
+- Cable stripper: removes insulation
+- Wi-Fi analyzer: scans wireless signals
+- Toner probe: traces cables
+- Punch down tool: inserts wires into patch panels
+- Cable tester: checks cable integrity
+- Loopback plug: tests ports
+- Network tap: copies traffic for monitoring
+
+![Cabling Tools](images/cabling_tools.png)
+
+## Ethernet and MAC Addresses
+
+MAC addresses uniquely identify devices on a local network.
+
+## Unicast, Multicast, and Broadcast
+
+- **Unicast:** Data sent to one device.
+- **Multicast:** Data sent to a group.
+- **Broadcast:** Data sent to all devices on a LAN.
+
+## Dissecting an Ethernet Frame
+
+An Ethernet frame includes destination and source MAC addresses, EtherType, payload, and frame check sequence for error detection.
 
 ---
 
-## Topics Covered
-- TCP/IP Five-Layer Network Model  
-- OSI Networking Model (Supplementary)  
-- Importance of Networking  
-- Cables, Hubs, Switches, Routers, Servers & Clients  
-- Moving Bits Across the Wire  
-- Twisted Pair Cabling & Duplexing  
-- Ethernet Over Twisted Pair Technologies  
-- Network Ports, Patch Panels & Cabling Tools  
-- Ethernet & MAC Addresses  
-- Unicast, Multicast, Broadcast  
-- Ethernet Frame Structure  
-- Glossary of Key Terms  
+### Glossary Terms (Selected)
+
+- **Bit:** Smallest unit of data.
+- **Broadcast:** Data sent to all devices.
+- **Client:** Device that receives data.
+- **Collision domain:** Network segment with one device communicating at a time.
+- **Duplex communication:** Data flows both directions.
+- **Hub:** Device that broadcasts to all ports.
+- **Router:** Device that routes data between networks.
+- **Server:** Device providing services or data.
+- **Switch:** Forwards data to intended device.
+- **Twisted pair cable:** Cable with twisted wire pairs to reduce interference.
+- **VLAN:** Virtual LAN for logical segmentation on physical networks.
 
 ---
 
-## TCP/IP Five-Layer Network Model  
-The TCP/IP model consists of five layers: Physical, Data Link, Network, Transport, and Application. This layered architecture enables communication between devices by defining how data is packaged, addressed, transmitted, routed, and received.
-
-![TCP/IP Model](tcp_ip_model.png)
-
----
-
-## OSI Networking Model (Supplementary)  
-The OSI model has seven layers: Physical, Data Link, Network, Transport, Session, Presentation, and Application. It provides a detailed framework for network communication and protocol development.
-
-![OSI Model](osi_model.png)
-
----
-
-## Why Networking is Important  
-Networking connects devices to share data, resources, and access the internet. It supports communication in homes, businesses, and across the globe, enabling services like email, video calls, and cloud computing.
-
-![Networking Importance](networking_importance.png)
-
----
-
-## Cables, Hubs, Switches, Routers, Servers & Clients  
-
-- **Cables** physically connect devices allowing data transmission.  
-- **Hubs** broadcast data to all connected devices, operating at the physical layer.  
-- **Switches** intelligently forward data only to the destination device using MAC addresses, working at the data link layer.  
-- **Routers** connect different networks, directing data based on IP addresses.  
-- **Servers** provide resources and services to clients, which request and use those services.
-
-![Network Devices](network_devices.png)
-
----
-
-## Moving Bits Across the Wire  
-Data is transmitted as electrical signals (copper cables), light pulses (fiber optics), or radio waves (wireless). The physical medium affects speed, distance, and quality of communication.
-
-![Data Transmission](data_transmission.png)
-
----
-
-## Twisted Pair Cabling & Duplexing  
-Twisted pair cables reduce electromagnetic interference by twisting wire pairs. Duplex communication can be:  
-- **Full Duplex:** simultaneous two-way data flow.  
-- **Half Duplex:** communication in one direction at a time.
-
-![Twisted Pair Cabling](twisted_pair_cable.png)
-
----
-
-## Ethernet Over Twisted Pair Technologies  
-Ethernet cables (CAT5, CAT6) use twisted pairs for reliable, low-cost networking in homes and businesses. They transmit both data and voice signals.
-
-![Ethernet Twisted Pair](ethernet_twisted_pair.png)
-
----
-
-## Cable Types  
-- **Unshielded Twisted Pair (UTP):** Most common, affordable, basic interference protection.  
-- **Shielded Twisted Pair (STP):** Includes shielding to protect against EMI and RFI.  
-- **Foiled Twisted Pair (FTP):** Uses foil shielding for added interference protection.
-
-![Cable Types](cable_types.png)
-
----
-
-## Cable Uses: Straight-Through vs. Crossover  
-- **Straight-through cables:** Connect different device types (e.g., PC to switch). Both ends have identical wiring.  
-- **Crossover cables:** Connect similar devices (e.g., PC to PC). Wiring on each end is crossed to align transmit and receive pairs. Mostly replaced by Auto-MDI/MDIX technology.
-
-![Straight-Through vs Crossover](straight_crossover_cables.png)
-
----
-
-## Network Ports & Patch Panels  
-Physical ports and patch panels organize cable connections in structured cabling systems, providing easy management and scalability.
-
-![Patch Panel](patch_panel.png)
-
----
-
-## Cabling Tools  
-
-- **Crimper:** Attaches connectors to cables by squeezing them in place.  
-- **Cable Stripper:** Removes the outer cable jacket.  
-- **Wi-Fi Analyzer:** Measures signal strength and quality.  
-- **Toner Probe:** Locates cables by producing audible tones.  
-- **Punch Down Tool:** Inserts wires into patch panels or keystone jacks.  
-- **Cable Tester:** Checks cable integrity and wiring.  
-- **Loopback Plug:** Tests network ports by looping signals back.  
-- **Network Tap:** Copies network traffic for monitoring without interrupting flow.
-
-![Cabling Tools](cabling_tools.png)
-
----
-
-## Ethernet & MAC Addresses  
-Every network device has a unique MAC address (48-bit), used to identify hardware in local networks and manage data transmission at the data link layer.
-
----
-
-## Unicast, Multicast & Broadcast  
-- **Unicast:** One sender to one receiver.  
-- **Multicast:** One sender to multiple specific receivers.  
-- **Broadcast:** One sender to all devices on the LAN.
-
----
-
-## Ethernet Frame Structure  
-An Ethernet frame contains:  
-- **Preamble:** Synchronizes communication.  
-- **Start Frame Delimiter (SFD):** Marks the start of the frame.  
-- **Destination & Source MAC:** Identifies sender and receiver.  
-- **EtherType:** Indicates the protocol.  
-- **Payload:** The actual data.  
-- **Frame Check Sequence (FCS):** Error checking.
-
----
-
-## Glossary (Selected Terms)  
-- **Bit:** Smallest unit of data.  
-- **Broadcast:** Transmission to all devices.  
-- **Collision Domain:** Network segment where collisions occur if multiple devices transmit simultaneously.  
-- **Duplex:** Two-way communication capability.  
-- **Hub:** Device broadcasting data to all ports.  
-- **Router:** Connects different networks.  
-- **Switch:** Forwards data intelligently based on MAC addresses.
-
----
-
-*End of Module 1 Learnings*
+*This summary covers the main concepts from Module 1 of "The Bits and Bytes of Computer Networking" course.*
