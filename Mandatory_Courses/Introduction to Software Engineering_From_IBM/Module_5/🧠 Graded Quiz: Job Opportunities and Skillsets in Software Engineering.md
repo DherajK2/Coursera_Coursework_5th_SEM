@@ -1,4 +1,4 @@
-# 🧠 Graded Quiz: Job Opportunities and Skillsets in Software Engineering  
+# Graded Quiz: Job Opportunities and Skillsets in Software Engineering  
 **Course:** Introduction to Software Engineering – IBM (Coursera)  
 **Module 5**
 
