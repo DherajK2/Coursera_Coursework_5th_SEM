@@ -63,5 +63,3 @@
 **Answer:** To serve the public good with fairness and integrity
 
 ---
-
-> 📁 Save as: `Mandatory_Courses/Introduction_to_Software_Engineering_From_IBM/Module_5/graded_quiz.md`
