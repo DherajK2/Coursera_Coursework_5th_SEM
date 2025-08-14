@@ -12,7 +12,7 @@ The Network Layer is responsible for delivering packets between different networ
 
 IPv4 addresses are 32-bit numerical labels assigned to devices. They're written in dotted decimal format (e.g., 192.168.1.1) and are essential for identifying devices on a network.
 
-![IPv4 Address Format](./images/IPv4_Address_Format.png)
+![IPv4 Address Format](images/IPv4_Address_Format.png)
 
 ---
 
@@ -20,7 +20,7 @@ IPv4 addresses are 32-bit numerical labels assigned to devices. They're written 
 
 Data is encapsulated in an IPv4 datagram, which includes headers (with fields like TTL, protocol, checksum) and a payload.
 
-![IPv4 Datagram Structure](./images/IPv4_Datagram_Structure.png)
+![IPv4 Datagram Structure](images/IPv4_Datagram_Structure.png)
 
 ---
 
@@ -28,7 +28,7 @@ Data is encapsulated in an IPv4 datagram, which includes headers (with fields li
 
 IP addresses are categorized into classes (A, B, C, D, E) based on their leading bits. This helps segment large address spaces.
 
-![IP Address Classes](./images/IP_Address_Classes.png)
+![IP Address Classes](images/IP_Address_Classes.png)
 
 ---
 
@@ -36,7 +36,7 @@ IP addresses are categorized into classes (A, B, C, D, E) based on their leading
 
 ARP maps IP addresses to MAC addresses, allowing devices to find one another on a local network.
 
-![ARP Process Diagram](./images/ARP_Process.png)
+![ARP Process Diagram](images/ARP_Process.png)
 
 ---
 
@@ -44,7 +44,7 @@ ARP maps IP addresses to MAC addresses, allowing devices to find one another on 
 
 Subnetting divides large networks into smaller, manageable subnets using subnet masks.
 
-![Subnetting Diagram](./images/Subnetting_Example.png)
+![Subnetting Diagram](images/Subnetting_Example.png)
 
 ---
 
@@ -58,7 +58,7 @@ CIDR (Classless Inter-Domain Routing) allows flexible allocation of IP addresses
 
 Understanding binary is key for calculating subnets, determining ranges, and understanding IP classes.
 
-![Binary Math Example](./images/Binary_Subnetting.png)
+![Binary Math Example](images/Binary_Subnetting.png)
 
 ---
 
@@ -66,7 +66,7 @@ Understanding binary is key for calculating subnets, determining ranges, and und
 
 Routers determine how packets travel using routing tables that define the best next hop.
 
-![Basic Routing Flow](./images/Basic_Routing_Concepts.png)
+![Basic Routing Flow](images/Basic_Routing_Concepts.png)
 
 ---
 
@@ -74,7 +74,7 @@ Routers determine how packets travel using routing tables that define the best n
 
 Routing tables hold information like destination networks, subnet masks, next hops, and interfaces.
 
-![Routing Table Example](./images/Routing_Table_Example.png)
+![Routing Table Example](images/Routing_Table_Example.png)
 
 ---
 
@@ -83,7 +83,7 @@ Routing tables hold information like destination networks, subnet masks, next ho
 - **Interior Gateway Protocols (IGPs)**: Used within autonomous systems (e.g., OSPF, RIP).
 - **Exterior Gateway Protocols (EGPs)**: Used between autonomous systems (e.g., BGP).
 
-![IGP vs EGP](./images/IGP_vs_EGP.png)
+![IGP vs EGP](images/IGP_vs_EGP.png)
 
 ---
 
@@ -91,7 +91,7 @@ Routing tables hold information like destination networks, subnet masks, next ho
 
 Autonomous systems (AS) are managed using unique ASN identifiers. The IANA oversees IP address distribution globally.
 
-![ASN and IANA](./images/ASN_IANA.png)
+![ASN and IANA](images/ASN_IANA.png)
 
 ---
 
@@ -99,7 +99,7 @@ Autonomous systems (AS) are managed using unique ASN identifiers. The IANA overs
 
 Protocols like RIP, OSPF, and BGP are defined in RFC documents maintained by the Internet Engineering Task Force (IETF).
 
-![RFC Process](./images/RFC_Process.png)
+![RFC Process](images/RFC_Process.png)
 
 ---
 
@@ -107,7 +107,7 @@ Protocols like RIP, OSPF, and BGP are defined in RFC documents maintained by the
 
 Certain IP address ranges (e.g., 192.168.x.x) are reserved for internal use and are not routable on the internet.
 
-![Private IP Ranges](./images/Private_IP_Addresses.png)
+![Private IP Ranges](images/Private_IP_Addresses.png)
 
 ---
 
