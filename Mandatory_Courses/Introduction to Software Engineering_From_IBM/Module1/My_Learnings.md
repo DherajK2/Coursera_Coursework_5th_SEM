@@ -66,4 +66,4 @@ Module 1 introduces the concept of SDLC, explains its phases and models, and emp
 
 ---
 
-> _This summary was prepared by Dhruv based on interaction with AI assistance and content from IBM’s Coursera course._
+> _This summary was prepared by Dheraj_k based on interaction with AI assistance and content from IBM’s Coursera course._
