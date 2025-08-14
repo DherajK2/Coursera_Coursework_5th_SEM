@@ -1,146 +1,153 @@
-# Module 2: Introduction to the Network Layer
+# Module 2: The Network Layer
 
 ---
 
-## 🌐 The Network Layer Overview
+## Introduction to The Network Layer
 
-The Network Layer is responsible for delivering packets between different networks. It ensures data can travel from a source device to a destination across routers and subnets.
-
----
-
-## 📍 IPv4 Addresses
-
-IPv4 addresses are 32-bit numerical labels assigned to devices. They're written in dotted decimal format (e.g., 192.168.1.1) and are essential for identifying devices on a network.
-
-![IPv4 Address Format](images/IPv4_Address_Format.png)
+The network layer is responsible for facilitating communication between different networks using routers. It ensures data is sent from one node to another across networks.
 
 ---
 
-## 📦 IPv4 Datagram and Encapsulation
+## The Network Layer
 
-Data is encapsulated in an IPv4 datagram, which includes headers (with fields like TTL, protocol, checksum) and a payload.
-
-![IPv4 Datagram Structure](images/IPv4_Datagram_Structure.png)
+This layer uses IP (Internet Protocol) to assign unique addresses and handle the delivery of packets across different networks.
 
 ---
 
-## 🏷️ IPv4 Address Classes
+## IPv4 Addresses
 
-IP addresses are categorized into classes (A, B, C, D, E) based on their leading bits. This helps segment large address spaces.
-
-![IP Address Classes](images/IP_Address_Classes.png)
+IPv4 uses 32-bit addresses, typically shown in dotted decimal notation (e.g., 192.168.1.1). These addresses are unique identifiers for devices on a network.
 
 ---
 
-## 🔁 Address Resolution Protocol (ARP)
+## IPv4 Datagram and Encapsulation
 
-ARP maps IP addresses to MAC addresses, allowing devices to find one another on a local network.
+An IP datagram wraps the data from upper layers with IP header information (like source and destination addresses). It is then encapsulated into a frame at the data link layer.
 
-![ARP Process Diagram](images/ARP_Process.png)
-
----
-
-## 🔢 Subnetting and Subnet Masks
-
-Subnetting divides large networks into smaller, manageable subnets using subnet masks.
-
-![Subnetting Diagram](images/Subnetting_Example.png)
+![IPv4 Datagram Encapsulation](images/IPv4_Datagram_Encapsulation.png)
 
 ---
 
-## 📐 CIDR Notation
+## IPv4 Address Classes
 
-CIDR (Classless Inter-Domain Routing) allows flexible allocation of IP addresses using notation like `/24` to define subnet masks.
+IPv4 addresses are grouped into five classes: A, B, C, D, and E. Each class has specific IP ranges and default subnet masks.
 
----
-
-## 🔣 Binary Math in Subnetting
-
-Understanding binary is key for calculating subnets, determining ranges, and understanding IP classes.
-
-![Binary Math Example](images/Binary_Subnetting.png)
+![IPv4 Address Classes](images/IPv4_Address_Classes.png)
 
 ---
 
-## 🚦 Basic Routing Concepts
+## Address Resolution Protocol (ARP)
 
-Routers determine how packets travel using routing tables that define the best next hop.
+ARP is used to map IP addresses to MAC addresses. When a device doesn’t know the MAC address for a given IP, it sends an ARP request; the corresponding device replies with its MAC.
 
-![Basic Routing Flow](images/Basic_Routing_Concepts.png)
-
----
-
-## 🗺️ Routing Tables
-
-Routing tables hold information like destination networks, subnet masks, next hops, and interfaces.
-
-![Routing Table Example](images/Routing_Table_Example.png)
+![ARP Request Reply Process](images/ARP_Request_Reply_Process.png)
 
 ---
 
-## 🔄 Interior vs Exterior Gateways
+## Subnetting
 
-- **Interior Gateway Protocols (IGPs)**: Used within autonomous systems (e.g., OSPF, RIP).
-- **Exterior Gateway Protocols (EGPs)**: Used between autonomous systems (e.g., BGP).
-
-![IGP vs EGP](images/IGP_vs_EGP.png)
+Subnetting divides a large network into smaller subnetworks. It improves routing efficiency and security.
 
 ---
 
-## 🛰️ Autonomous Systems and IANA
+## Subnet Masks
 
-Autonomous systems (AS) are managed using unique ASN identifiers. The IANA oversees IP address distribution globally.
+A subnet mask determines which portion of an IP address is the network and which is the host.
 
-![ASN and IANA](images/ASN_IANA.png)
-
----
-
-## 🔍 RFCs and Internet Standards
-
-Protocols like RIP, OSPF, and BGP are defined in RFC documents maintained by the Internet Engineering Task Force (IETF).
-
-![RFC Process](images/RFC_Process.png)
+![Subnetting With Mask Examples](images/Subnetting_With_Mask_Examples.png)
 
 ---
 
-## 🚫 Non-Routable Address Space
+## Basic Binary Math
 
-Certain IP address ranges (e.g., 192.168.x.x) are reserved for internal use and are not routable on the internet.
-
-![Private IP Ranges](images/Private_IP_Addresses.png)
+Networking relies on binary for operations like calculating IP ranges and subnetting. For example, 192.168.1.0/24 means the first 24 bits are network bits.
 
 ---
 
-## 📚 Glossary Highlights
+## CIDR (Classless Inter-Domain Routing)
 
-- **IP Datagram**: A structured data unit in IPv4.
-- **TTL (Time-To-Live)**: Limits the number of hops a packet can take.
-- **Subnet Mask**: Defines the network portion of an IP.
-- **Next Hop**: The next router to send the packet to.
-- **NAT**: Allows private IPs to access the public internet.
-- **CIDR**: Flexible IP allocation system (e.g., /22).
+CIDR replaces the old class-based addressing. It uses slash notation (e.g., /24) to denote how many bits are network bits, allowing more efficient IP allocation.
+
+![CIDR Blocks Aggregation](images/CIDR_Blocks_Aggregation.png)
 
 ---
 
-## 📘 Summary
+## Basic Routing Concepts
 
-In this module, you explored how data travels across networks using IP, routing protocols, and addressing systems. You learned about subnetting, ARP, CIDR, and the role of routers and protocols in forwarding data.
+Routers use routing tables to determine where to send packets based on destination IP addresses.
+
+![Routing Table Concept](images/Routing_Table_Concept.png)
+
+---
+
+## Routing Tables
+
+Each router maintains a routing table listing known networks and how to reach them—either directly or via another router (next hop).
 
 ---
 
-*Images used in this module:*
+## Interior Gateway Protocols
 
-- IPv4_Address_Format.png  
-- IPv4_Datagram_Structure.png  
-- IP_Address_Classes.png  
-- ARP_Process.png  
-- Subnetting_Example.png  
-- Binary_Subnetting.png  
-- Basic_Routing_Concepts.png  
-- Routing_Table_Example.png  
-- IGP_vs_EGP.png  
-- ASN_IANA.png  
-- RFC_Process.png  
-- Private_IP_Addresses.png
+Interior gateway protocols like RIP and OSPF allow routers within a single autonomous system to share route information.
 
 ---
+
+## Exterior Gateways, Autonomous Systems, and the IANA
+
+BGP (Border Gateway Protocol) is used between autonomous systems. These systems are assigned ASN numbers by IANA and share routing information at a global level.
+
+![Routing Protocols RIP OSPF BGP](images/Routing_Protocols_RIP_OSPF_BGP.png)
+
+![Autonomous Systems IANA](images/Autonomous_Systems_IANA.png)
+
+---
+
+## Supplemental Reading for Routing Protocol Examples
+
+- **RIP** – A simple distance vector protocol.
+- **EIGRP** – Cisco’s proprietary enhancement of RIP.
+- **OSPF** – A link-state protocol used within autonomous systems.
+- **BGP** – The standard protocol for routing between autonomous systems.
+
+---
+
+## Non-Routable Address Space
+
+Some IPv4 address ranges are reserved for private networks and cannot be routed on the public internet. Examples include:
+- 10.0.0.0/8
+- 172.16.0.0/12
+- 192.168.0.0/16
+- 127.0.0.1 (loopback)
+- 169.254.0.0/16 (link-local)
+
+![Non-Routable IP Spaces](images/Non_Routable_IP_Spaces.png)
+
+---
+
+## Supplemental Reading for RFCs and Standards
+
+The IETF publishes **RFCs (Request for Comments)** that define internet standards and protocols. You can explore these on [ietf.org](https://ietf.org).
+
+Fun RFCs:
+- **RFC 1149** – IP over Avian Carriers
+- **RFC 3514** – The evil bit
+
+---
+
+## Glossary
+
+- **ARP Table**: A cache that stores IP-to-MAC mappings.
+- **CIDR**: Classless Inter-Domain Routing; allows flexible IP allocation.
+- **Next Hop**: The next router a packet should go to.
+- **Subnet**: A smaller network created from a larger one.
+- **NAT**: Network Address Translation, used to map private IPs to public IPs.
+- **TTL**: Time-To-Live, the number of hops a packet can make before being discarded.
+
+---
+
+## Conclusion
+
+The Network Layer ensures that devices across networks can communicate effectively by using protocols like IP, ARP, and routing protocols such as RIP, OSPF, and BGP.
+
+---
+
