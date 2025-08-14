@@ -11,23 +11,25 @@ The **Software Development Lifecycle (SDLC)** is a structured framework that out
 
 ### 🛠️ Phases of SDLC
 
+![Phases of SDLC](./images/Phases_Of_SDLC.png)
+
 1. **Requirements Gathering**  
-   Identify and document the goals, features, and constraints of the software. Understand what the client or end-user expects the software to do.
+   Identify and document the goals, features, and constraints of the software.
 
 2. **Design**  
-   Define the architecture, system components, user interfaces, and data models. This serves as a blueprint for the implementation phase.
+   Define the architecture, system components, user interfaces, and data models.
 
 3. **Implementation**  
    Write the actual code to create the software based on the design specifications.
 
 4. **Testing**  
-   Verify that the software works as intended. Detect and fix any bugs or issues to ensure product quality.
+   Verify that the software works as intended. Detect and fix bugs.
 
 5. **Deployment**  
-   Release the software to the end-users in a live environment. Make it accessible for actual use.
+   Release the software to the end-users.
 
 6. **Maintenance**  
-   Provide ongoing support, updates, and improvements. Fix issues that arise post-deployment and adapt the software to changing needs.
+   Provide ongoing updates and fixes post-deployment.
 
 ---
 
@@ -38,27 +40,29 @@ Using a structured SDLC process:
 - Ensures **high-quality** software.
 - Improves **efficiency** and **project planning**.
 - Minimizes **risks** and unexpected issues.
-- Enhances **team collaboration** and **communication**.
-- Supports **on-time** and **within-budget** delivery of software products.
+- Enhances **team collaboration**.
+- Supports **on-time** and **within-budget** delivery.
 
 ---
 
 ### 🔄 Models of SDLC
 
+![SDLC Models](./images/Models_Of_SDLC.png)
+
 1. **Waterfall Model**  
-   A linear, sequential approach where each phase must be completed before moving on. Best suited for projects with clearly defined requirements and minimal expected changes.
+   A linear, sequential model. Suitable for projects with fixed, well-understood requirements.
 
 2. **Agile Model**  
-   An iterative and incremental approach. Emphasizes collaboration, flexibility, and customer feedback. Ideal for projects where requirements may evolve over time.
+   An iterative model focused on collaboration, flexibility, and customer feedback.
 
 3. **Spiral Model**  
-   Combines elements of both iterative development and risk management. Designed for large, complex, and high-risk projects where changes are expected and risk needs close monitoring.
+   Combines iterative development with risk analysis. Best for large and high-risk projects.
 
 ---
 
 ### 🧠 Summary
 
-Module 1 introduces the core concept of SDLC, explains its phases, highlights its importance, and compares different models used in practice. This foundation is essential for understanding how software projects are planned, executed, and maintained in real-world scenarios.
+Module 1 introduces the concept of SDLC, explains its phases and models, and emphasizes its importance in modern software development.
 
 ---
 
