@@ -129,17 +129,17 @@ git config --global user.email "you@example.com"
 ## ✅ Practice Quiz: Version Control Systems
 
 Reinforced understanding of:
--Centralized vs Distributed Version Control Systems
--Git’s key advantages: offline work, speed, and branching
--Important version control terminology
+- Centralized vs Distributed Version Control Systems
+- Git’s key advantages: offline work, speed, and branching
+- Important version control terminology
 ---
 
 ## 🛫 Review: First Steps with Git
 
 The first steps with Git include:
--Initializing repositories
--Configuring Git identity
--Making the first commit
+- Initializing repositories
+- Configuring Git identity
+- Making the first commit
 ---
 
 ## 🧾 First Steps with Git
@@ -205,9 +205,9 @@ git push origin main
 ## 🧠 Review: Anatomy of a Commit Message
 
 Good commit messages are crucial for collaborative development. A message should:
--Be short and descriptive in the subject line
--Optionally include a detailed body
--Follow a consistent convention or style
+- Be short and descriptive in the subject line
+- Optionally include a detailed body
+- Follow a consistent convention or style
 ---
 
 ## ✍️ Anatomy of a Commit Message
@@ -228,18 +228,19 @@ Fixes #42
 ## 📚 Study Guide: Git
 
 The guide summarized:
--Frequently used commands
--How Git stores history using commits
--Real-world scenarios where Git improves team collaboration
+- Frequently used commands
+- How Git stores history using commits
+- Real-world scenarios where Git improves team collaboration
 ---
 
 
 ## ✅ Module 1 Wrap-Up
 
 In this module, we learned:
--Why version control is critical for teams and solo developers
--How Git enables efficient workflows
--The core commands needed to track, commit, and push code
+- Why version control is critical for teams and solo developers
+- How Git enables efficient workflows
+- The core commands needed to track, commit, and push code 
+
 ---
 
 ## 📖 Glossary Terms
@@ -251,24 +252,25 @@ Key terms explained in the course:
 `Merge` – Combining changes from different branches
 `Clone` – Copying a repository to your local machine
 `Push / Pull` – Sending or receiving changes from a remote repo
+
 ---
 
 ## 💡 Qwiklabs Guidelines and Troubleshooting
 
 Tips to successfully complete Qwiklabs:
--Follow lab instructions precisely
--Use Git Bash or Cloud Shell for commands
--Save your work regularly
--Don’t refresh browser windows during lab sessions
+- Follow lab instructions precisely
+- Use Git Bash or Cloud Shell for commands
+- Save your work regularly
+- Don’t refresh browser windows during lab sessions
 ---
 
 ## 🧪 Qwiklabs Assessment: Introduction to Git
 
 This ungraded lab tested your ability to:
--Initialize a Git repository
--Add and commit files
--Push changes to a GitHub repository
--It was a practical application of everything covered so far.
+- Initialize a Git repository
+- Add and commit files
+- Push changes to a GitHub repository
+- It was a practical application of everything covered so far.
 ---
 ## 🎉 Conclusion
 
